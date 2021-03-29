@@ -10,6 +10,7 @@ export const SidebarContainer = styled.aside`
     background: #ffc500;
     display: grid;
     align-items:  center;
+    justify-content: center;
     transition: 0.3s ease-in-out;
     right: ${({ isOpen }) => (isOpen ? '0' : '-1000px') };
 
@@ -50,6 +51,7 @@ export const SidebarLink = styled(Link)`
     align-items: center;
     justfy-content: center;
     font-size: 1.5rem;
+    padding: 1.2rem;
     text-decoration: none;
     list-style: none;
     transition: 0.2s ease-in-out;
@@ -66,6 +68,7 @@ export const SidebarLink = styled(Link)`
 export const SideBtnWrap = styled.div`
     display: flex;
     justify-content: center;
+    margin-bottom: 3.5rem;
 `;
 
 export const SidebarRoute = styled(Link)`
