@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaRegEnvelope } from 'react-icons/fa';
 import {
     FooterContainer,
     FooterWrap,
@@ -16,19 +16,25 @@ const Footer = () => {
             <FooterWrap>
                 <SocialMedia>
                     <SocialMediaWrap>
-                        <SocialLogo tp='/'>Sausage</SocialLogo>
+                        <SocialLogo tp='/'>Teton Valley Meats</SocialLogo>
                         <SocialIcons>
-                            <SocialIconLink href='/'
+                            <SocialIconLink href='https://www.facebook.com/tetonvalleymeats'
                                             target='_blank'
                                             aria-label='Facebook'
                                             rel='noopener noreferrer'>
                                 <FaFacebook/>
                             </SocialIconLink>
-                            <SocialIconLink href='/'
+                            <SocialIconLink href='https://www.instagram.com/tetonvalleymeats/'
                                             target='_blank'
                                             aria-label='Instagram'
                                             rel='noopener noreferrer'>
                                 <FaInstagram />
+                            </SocialIconLink>
+                            <SocialIconLink href='mailto:contact@tetonvalleymeats.com?'
+                                            target='_blank'
+                                            aria-label='Email'
+                                            rel='noopener noreferrer'>
+                                <FaRegEnvelope />
                             </SocialIconLink>
                         </SocialIcons>
                     </SocialMediaWrap>

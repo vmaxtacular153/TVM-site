@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { NavLink as Link } from 'react-router-dom';
 import { FaShoppingCart } from 'react-icons/fa';
+import Logo from '../../images/TetonValleyMeats.jpg';
 
 export const Nav = styled.nav`
     background: transparent;
@@ -10,12 +11,21 @@ export const Nav = styled.nav`
     font-weight: 600;
 `;
 
+export const NavLogo = styled.img`
+    position: absolute;
+    margin: 20px;
+    left: 0;
+    top: 0;
+    height: 80px;
+`;
+
 export const NavLink = styled(Link)`
     color: #fff;
-    font-size: 2rem;
+    font-size: 3rem;
     display: flex;
     align-items: center;
     text-decoration: none;
+    text-transform: uppercase;
     cursor: pointer;
 
     @media screen and (max-width: 400px) {
@@ -28,8 +38,8 @@ export const NavLink = styled(Link)`
 export const NavIcon = styled.div`
     display: block;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 30px;
+    right: 10px;
     cursor: pointer;
     color: #fff;
 

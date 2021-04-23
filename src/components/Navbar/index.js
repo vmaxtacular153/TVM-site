@@ -1,13 +1,14 @@
 import React from 'react';
-import { Nav, NavLink, NavIcon, Bars } from './navbarElements';
+import { Nav, NavLogo, NavLink, NavIcon, Bars } from './navbarElements';
+import Logo from '../../images/TetonValleyMeats.jpg';
 
 const Navbar = ({ toggle }) => {
     return (
         <>
             <Nav>
-                <NavLink to='/'>TETON VALLEY MEATS</NavLink>
+                <NavLogo src={Logo} alt='logo' />
+                <NavLink to='/'>Teton Valley Meats</NavLink>
                 <NavIcon onClick={toggle}>
-                    <p>Menu</p>
                     <Bars />
                 </NavIcon>
             </Nav>
